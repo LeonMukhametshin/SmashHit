@@ -6,34 +6,19 @@ public class CamerMovement : MonoBehaviour
 
     private float currentSpeed;
 
-    private Vector3 rotateDirection;
-
     private void Start()
     {
         currentSpeed = speed;
     }
-    private void FixedUpdate() // 0.02 - Time.fixedDeltaTime
+
+    private void FixedUpdate() 
     {
         Movement();
-
     }
 
     private void Movement()
     {
         currentSpeed = Mathf.Lerp(currentSpeed, speed, Time.fixedDeltaTime);
-        transform.Rotate(rotateDirection);
         transform.position += transform.forward * currentSpeed * Time.fixedDeltaTime;
-
     }
-
-
-
-
-
-
-
-
-
-
-
 }
