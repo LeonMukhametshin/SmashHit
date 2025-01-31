@@ -114,8 +114,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 214704529018515126}
+  - component: {fileID: 7790408532916224599}
+  - component: {fileID: 1492319912815118740}
   m_Layer: 0
-  m_Name: Hallway (1)
+  m_Name: Hallway 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,6 +140,40 @@ Transform:
   - {fileID: 3358608144080094955}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7790408532916224599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443505916646478621}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 25}
+--- !u!114 &1492319912815118740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443505916646478621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74223aececde1bd47b6c5c2c5d0c8dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ending: {fileID: 3358608144080094955}
 --- !u!1 &7075288777738053528
 GameObject:
   m_ObjectHideFlags: 0
