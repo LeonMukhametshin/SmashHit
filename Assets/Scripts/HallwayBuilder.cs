@@ -12,11 +12,28 @@ public class HallwayBuilder : MonoBehaviour
     {
         if(hallwayPrefabs != null) // != null - is not empty
         {
-            int randomIndex = Random.Range(0, hallwayPrefabs.Length); 
-            currentHallway = Instantiate(hallwayPrefabs[randomIndex], transform.position, Quaternion.identity);
+            currentHallway = RandomHallway(transform.position);
 
-            randomIndex = Random.Range(0, hallwayPrefabs.Length);
-            lastHallway = Instantiate(hallwayPrefabs[randomIndex], currentHallway.GetComponent<Hallway>().ending.position, Quaternion.identity);
+            lastHallway = RandomHallway(currentHallway.GetComponent<Hallway>().ending.position);
         }
+    }
+
+    public void BuildContinue()
+    {
+        if(previousHallway != null)
+        {
+            Destroy(previousHallway);
+        }
+
+        previousHallway = currentHallway;
+        currentHallway = lastHallway;
+
+        lastHallway = RandomHallway(currentHallway.GetComponent<Hallway>().ending.position);
+    }
+
+    private GameObject RandomHallway(Vector3 spawnPosition)
+    {
+        int randomIndex = Random.Range(0, hallwayPrefabs.Length);
+        return Instantiate(hallwayPrefabs[randomIndex], spawnPosition, Quaternion.identity);
     }
 }

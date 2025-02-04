@@ -227,8 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064a44d6b1f443348a512ad34febadee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hallwayPrefabs:
-  - {fileID: 1733015701921628234, guid: 7f6451e92ab8cbe4b94b16131e479d50, type: 3}
+  hallwayPrefabs: []
 --- !u!4 &2222892063281340863
 Transform:
   m_ObjectHideFlags: 0
