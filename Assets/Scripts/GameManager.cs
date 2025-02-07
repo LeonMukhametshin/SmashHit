@@ -10,12 +10,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int initialBallCount = 25;
 
+    private static int  maxBallCount = 50;
+
     private void Awake()
     {
         BallCount = initialBallCount;
-
-        TakeDamage();
-        TakeDamage(5);
     }
 
     public static void TakeDamage(int damage = 10)
@@ -26,6 +25,16 @@ public class GameManager : MonoBehaviour
         {
             BallCount = 0;
             OnLoss.Invoke();
+        }
+    }
+
+    public static void Healing(int count = 25)
+    {
+         BallCount += count;
+
+        if(BallCount > maxBallCount)
+        {
+            BallCount = maxBallCount;
         }
     }
 }
