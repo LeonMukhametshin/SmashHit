@@ -5,12 +5,10 @@ public class GameManager : MonoBehaviour
 {
     // new - выделение памяти 
     public static UnityEvent OnLoss = new UnityEvent();
-
     public static int BallCount;
+    private static int maxBallCount = 50;
 
     [SerializeField] private int initialBallCount = 25;
-
-    private static int  maxBallCount = 50;
 
     private void Awake()
     {
@@ -30,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     public static void Healing(int count = 25)
     {
-         BallCount += count;
+        BallCount += count;
 
         if(BallCount > maxBallCount)
         {

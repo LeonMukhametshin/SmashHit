@@ -6,12 +6,17 @@ public class CamerMovement : MonoBehaviour
 
     private float currentSpeed;
 
+    private void OnEnable()
+    {
+        GameManager.OnLoss.AddListener(BreakMovement);
+    }
+
     private void Start()
     {
         currentSpeed = speed;
     }
 
-    private void FixedUpdate() 
+    private void FixedUpdate()
     {
         Movement();
     }
@@ -20,5 +25,10 @@ public class CamerMovement : MonoBehaviour
     {
         currentSpeed = Mathf.Lerp(currentSpeed, speed, Time.fixedDeltaTime);
         transform.position += transform.forward * currentSpeed * Time.fixedDeltaTime;
+    }
+
+    private void BreakMovement()
+    {
+        speed = 0;
     }
 }
