@@ -5,7 +5,7 @@ public class NumbersManager : MonoBehaviour
 {
     [SerializeField] private Text text;
 
-    private void Awake()
+    private void Update()
     {
         text.text = GameManager.BallCount.ToString();
     } 
