@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void Healing(int count = 25)
+    public static void Reloading(int count = 25)
     {
         BallCount += count;
 
