@@ -603,6 +603,7 @@ GameObject:
   - component: {fileID: 9058925256934048657}
   - component: {fileID: 3522943391148504423}
   - component: {fileID: 7109164754265157352}
+  - component: {fileID: 771782505176964693}
   m_Layer: 0
   m_Name: Cube.007
   m_TagString: Untagged
@@ -696,6 +697,43 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019999998, y: 0.099999994, z: 0.0040000007}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &771782505176964693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565254359946659551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8cf77b472b5564e85fa04fa8c14146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragments:
+  - {fileID: 6119329298215427233}
+  - {fileID: 5956385678977353964}
+  - {fileID: 8385115569499682943}
+  - {fileID: 8720987427847490557}
+  - {fileID: 7236018203493021561}
+  - {fileID: 959486330514074413}
+  - {fileID: 8793068626076724409}
+  - {fileID: 5196510117898737546}
+  - {fileID: 195876128806688792}
+  - {fileID: 4619495147250282454}
+  - {fileID: 7416307739618464752}
+  - {fileID: 8257670671875446474}
+  - {fileID: 2763950913933129284}
+  - {fileID: 1393858424475522002}
+  - {fileID: 5237484627848545919}
+  - {fileID: 8736353648227143240}
+  - {fileID: 6712732235224552475}
+  - {fileID: 1310333683807996179}
+  - {fileID: 2748340338142610773}
+  - {fileID: 5756266220126000371}
+  - {fileID: 6632580268981903278}
+  - {fileID: 3522084815996913954}
+  - {fileID: 2301408199002596881}
+  - {fileID: 8863757037455559368}
 --- !u!1 &2301408199002596881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1145,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6847684155958399015}
-  - component: {fileID: 909074535868211738}
   m_Layer: 0
   m_Name: GlassWall2
   m_TagString: Untagged
@@ -1124,7 +1161,7 @@ Transform:
   m_GameObject: {fileID: 3225984933613901040}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0097437, y: -4.7874446, z: 8.19}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 150, y: 20, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1132,43 +1169,6 @@ Transform:
   - {fileID: 1356638883586342032}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &909074535868211738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3225984933613901040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb8cf77b472b5564e85fa04fa8c14146, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fragments:
-  - {fileID: 6119329298215427233}
-  - {fileID: 5956385678977353964}
-  - {fileID: 8385115569499682943}
-  - {fileID: 8720987427847490557}
-  - {fileID: 7236018203493021561}
-  - {fileID: 959486330514074413}
-  - {fileID: 8793068626076724409}
-  - {fileID: 5196510117898737546}
-  - {fileID: 195876128806688792}
-  - {fileID: 4619495147250282454}
-  - {fileID: 7416307739618464752}
-  - {fileID: 8257670671875446474}
-  - {fileID: 2763950913933129284}
-  - {fileID: 1393858424475522002}
-  - {fileID: 5237484627848545919}
-  - {fileID: 8736353648227143240}
-  - {fileID: 6712732235224552475}
-  - {fileID: 1310333683807996179}
-  - {fileID: 2748340338142610773}
-  - {fileID: 5756266220126000371}
-  - {fileID: 6632580268981903278}
-  - {fileID: 3522084815996913954}
-  - {fileID: 2301408199002596881}
-  - {fileID: 8863757037455559368}
 --- !u!1 &3522084815996913954
 GameObject:
   m_ObjectHideFlags: 0

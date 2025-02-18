@@ -3,6 +3,7 @@ using UnityEngine;
 public class DestructionEffect : MonoBehaviour
 {
     [SerializeField] private GameObject[] fragments;
+    [SerializeField] private int addedBalls = 5;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,6 +23,9 @@ public class DestructionEffect : MonoBehaviour
                     }
                 }
             }
+            Debug.Log("До " + GameManager.BallCount);
+            GameManager.Reloading(addedBalls);
+            Debug.Log("После " + GameManager.BallCount);
             gameObject.SetActive(false);
         }
     }

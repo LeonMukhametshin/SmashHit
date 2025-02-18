@@ -9,17 +9,8 @@ public class ThrowBall : MonoBehaviour
 
     [SerializeField] private GameObject ballPrefab;
     [SerializeField, Range(1, 500)] private float throwForce = 50f;
-    [SerializeField] private float timeToDestroy;
-
-    public static int BallCount;
-    private static int maxBallCount = 50;
 
     private Camera mainCamera;
-
-    private void Start()
-    {
-        Destroy(gameObject, timeToDestroy);
-    }
 
     private void Awake()
     {
@@ -31,22 +22,6 @@ public class ThrowBall : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             Throw();
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log(collision.gameObject.name);
-        Destroy(gameObject);
-        
-        static void Reloading(int count = 25)
-        {
-            BallCount += count;
-
-            if (BallCount > maxBallCount)
-            {
-                BallCount = maxBallCount;
-            }
         }
     }
 
