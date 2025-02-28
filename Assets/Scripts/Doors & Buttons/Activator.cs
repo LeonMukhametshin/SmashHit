@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Button : MonoBehaviour
+public class Activator : MonoBehaviour
 {
     public bool IsActive = false;
     public UnityEvent OnActivate;

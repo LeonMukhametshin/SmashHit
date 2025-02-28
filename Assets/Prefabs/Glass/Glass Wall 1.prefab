@@ -2288,7 +2288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2378949863991005649}
   m_Layer: 0
-  m_Name: 'Glas '
+  m_Name: Glass Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

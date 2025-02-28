@@ -5,7 +5,7 @@ public class Door : MonoBehaviour
 {
     public UnityEvent OnOpen;
 
-    [SerializeField] private Button[] buttons;
+    [SerializeField] private Activator[] buttons;
 
     private void Awake()
     {
