@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static int BallCount;
     private static int maxBallCount = 50;
 
+    public static bool IsUIBlocking = false;
+
     [SerializeField] private int initialBallCount = 25;
 
     private void Awake()
