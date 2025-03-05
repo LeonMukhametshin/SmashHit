@@ -2289,7 +2289,7 @@ GameObject:
   - component: {fileID: 2378949863991005649}
   m_Layer: 0
   m_Name: Glass Wall 1
-  m_TagString: Untagged
+  m_TagString: Glass Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4161,6 +4161,7 @@ MonoBehaviour:
   - {fileID: 1204142976614912130}
   - {fileID: 815627637220135871}
   - {fileID: 2004004164798961294}
+  addedBalls: 5
 --- !u!1 &8345972662722674105
 GameObject:
   m_ObjectHideFlags: 0
