@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class CameraCollision : MonoBehaviour
@@ -13,6 +14,14 @@ public class CameraCollision : MonoBehaviour
             {
                 GameManager.TakeDamage();
             }       
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Aceleration"))
+        {
+            
         }
     }
 }   
