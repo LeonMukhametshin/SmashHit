@@ -19,7 +19,7 @@ public class ThrowBall : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !GameManager.IsUIBlocking)
         {
             Throw();
         }

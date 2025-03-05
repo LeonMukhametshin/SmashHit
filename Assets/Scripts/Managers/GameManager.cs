@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static int BallCount;
     private static int maxBallCount = 50;
 
+    public static bool IsUIBlocking = false;
+
     [SerializeField] private int initialBallCount = 25;
 
     private void Awake()
@@ -26,7 +28,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void Healing(int count = 25)
+    public static void Reloading(int count = 5)
     {
         BallCount += count;
 
