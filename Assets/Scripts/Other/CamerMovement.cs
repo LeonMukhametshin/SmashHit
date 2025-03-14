@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class CamerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private float initialSpeed;
+     private float currentSpeed;
+     private float maxSpeed = 30;
 
-    private float currentSpeed;
 
     private void OnEnable()
     {
@@ -13,7 +14,7 @@ public class CamerMovement : MonoBehaviour
 
     private void Start()
     {
-        currentSpeed = speed;
+        currentSpeed = initialSpeed;
     }
 
     private void FixedUpdate()
@@ -23,12 +24,22 @@ public class CamerMovement : MonoBehaviour
 
     private void Movement()
     {
-        currentSpeed = Mathf.Lerp(currentSpeed, speed, Time.fixedDeltaTime);
+        currentSpeed = Mathf.Lerp(currentSpeed, initialSpeed, Time.fixedDeltaTime);
         transform.position += transform.forward * currentSpeed * Time.fixedDeltaTime;
     }
 
     private void BreakMovement()
     {
-        speed = 0;
+        initialSpeed = 0;
+    }
+
+    public void IncreaseSpeed(float additionalSpeed = 5)
+    {
+        currentSpeed += additionalSpeed;
+
+        if(currentSpeed > maxSpeed)
+        {
+            currentSpeed = maxSpeed;
+        }
     }
 }
