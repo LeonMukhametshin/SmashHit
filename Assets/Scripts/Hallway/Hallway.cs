@@ -8,7 +8,7 @@ public class Hallway : MonoBehaviour
     {
         if(other.GetComponent<Camera>())
         {
-            FindObjectOfType<HallwayBuilder>().BuildContinue();s
+            FindObjectOfType<HallwayBuilder>().BuildContinue();
         }
     }
 }

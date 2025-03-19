@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    public static void jump()
+    public void Jumping()
     {
         Debug.Log("Jump");
     }
